@@ -10,7 +10,7 @@ var router *gin.Engine
 var DB *sql.DB
 
 func main() {
-	ConnectStr := "user = postgres password = Xpolkwfv13 dbname = Gin sslmode = disable"
+	ConnectStr := "user = postgres password = Xpolkwfv13 dbname = Gin sslmode = disable" // change to the relevant value
 	db, err := sql.Open("postgres", ConnectStr)
 	if err != nil {
 		panic(err)
