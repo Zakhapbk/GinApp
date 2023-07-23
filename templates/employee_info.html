@@ -1,0 +1,10 @@
+{{template "header.html"}}
+
+<div class="main-content">
+    <h1>Description</h1>
+            <b>{{ .title }}</b>: {{ .content }}
+<form method="post" action="/emp/{{.Id}}">
+    <button type="submit">Delete</button>
+</form>
+</div>
+{{template "footer.html"}}

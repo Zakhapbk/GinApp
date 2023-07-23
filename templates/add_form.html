@@ -1,0 +1,20 @@
+{{template "header.html"}}
+<form class="form" method="post" action = "/new">
+<div class="main-content">
+    <h1>Input information</h1>
+    <input type="text" name ="Name" placeholder="Name"><br><br>
+    <label for = "pos"> Position</label>
+    <select id="pos" name="Position" >
+        <option value="dev">Developer</option>
+        <option value="dsgn">Designer</option>
+        <option value="test">Tester</option>
+        <option value="mng">Manager</option>
+        <option value="devop">DevOps</option>
+    </select><br><br>
+    <input type="number" name ="Salary" placeholder="Salary"/><br><br>
+    <input type="number" name ="Exp" placeholder="Exp"/><br><br>
+    <textarea name="About" placeholder="About"></textarea><br><br>
+    <button type="submit">Submit</button><br><br>
+</div>
+</form>
+{{template "footer.html"}}

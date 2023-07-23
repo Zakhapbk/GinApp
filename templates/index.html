@@ -1,0 +1,17 @@
+{{ template "header.html"  }}
+{{if .Flag}}
+    {{template "homepage.html"}}
+{{else}}
+<div class = main-content>
+    <h1 style="">Employees</h1>
+    {{range .content }}
+    <a href="/emp/{{.Id}}">
+    <li>
+        <b>{{ .Name }}</b>: </a>{{ .Position }}
+    </li>
+    {{end}}
+</div>
+
+{{end}}
+
+{{ template "footer.html" }}
